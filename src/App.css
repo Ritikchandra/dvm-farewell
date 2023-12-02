@@ -1,0 +1,235 @@
+@font-face {
+  font-family: upheaval;
+  src: url('../src/assets/fonts/upheavtt.ttf');
+}
+@font-face {
+  font-family: mono;
+  src: url('../src/assets/fonts/DMMono-Light.ttf');
+}
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+.pageWrapper{
+  height: 100dvh;
+  width: 100vw;
+  overflow: hidden;
+  background-image: url('../src/assets/farewellBgImage.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100vw 100dvh;
+  position: relative;
+  top: 0;
+  display: flex;
+}
+.dvmLogo img{
+  position: absolute;
+  /* top: max(25px, 1vh);
+  left: max(25px,1vw); */
+  top: 20px;
+  left: 20px;
+}
+.leftSideWrapper{
+  height: 80vh;
+  width: 60vw;
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+.topTextWrapper{
+  margin-left: max(50px,5vw);
+}
+.bottomTextWrapper{
+  margin-left: max(50px, 5vw);
+  font-family: upheaval;
+  letter-spacing: 2px;
+}
+.heading{
+  font-family: upheaval;
+  font-size: 7rem;
+}
+.rotateText{
+  transform: rotate(90deg);
+  transform-origin: right bottom;
+  white-space: nowrap;
+  display: inline-block;
+  height: 0px;
+  font-size: 1.5rem;
+  font-family: upheaval;
+  margin-top: 10px;
+  width: 30px;
+}
+.flexContainer{
+  display: flex;
+  align-items: center;
+}
+p{
+  font-family: mono;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.rightSideWrapper{
+  width: 40%;
+  justify-content: flex-end;
+  height: 90%;
+  align-self: flex-end;
+}
+.carouselContainer{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  /* position: relative; */
+  /* padding: 1rem; */
+  height: max-content;
+}
+.leftBtn{
+  /* position: absolute;
+  left: 0px; */
+  width: 20%;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+}
+.leftBtn img{
+  width: 60px;
+  height: auto;
+  transform: translateY(-75%);
+}
+.info{
+  padding-right: 2rem;
+}
+.info img{
+  width: 300px;
+  height: 300px;
+}
+.infoText{
+  font-size:1.5rem ;
+  font-family: upheaval;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.name{
+  color: white;
+  font-size: 3rem;
+  font-weight: 500;
+}
+.team{
+  color: rgba(255, 128, 128, 1);
+  font-size: 3rem;
+}
+.dvm span{
+  font-family: upheaval;
+  letter-spacing: 2px;
+}
+.dvm{
+  display: none;
+}
+@media screen and (max-width: 1080px) {
+  .pageWrapper{
+    flex-direction: column;
+    overflow-y: scroll;
+  }
+  .leftSideWrapper, .rightSideWrapper{
+    width: 100vw;
+  }
+  .leftSideWrapper{
+    margin-top: 20vh;
+  }
+  .rightSideWrapper{
+    padding-top: 3rem;
+
+  }
+  .leftBtn{
+    margin-left: unset;
+    position: absolute;
+  left: 10vw;
+  }
+  .carouselContainer{
+    justify-content: center;
+    padding-bottom: 1rem;
+    position: relative;
+  }
+  .topTextWrapper{
+    margin-left: unset;
+  }
+  .heading{
+    padding-left: 1rem;
+
+  }
+  p{
+    padding: 1rem;
+  }
+  .bottomTextWrapper{
+    padding-left: 1rem;
+    margin-left: unset;
+  }
+  .bottomTextWrapper{
+    display: none;
+  }
+  .dvm span{
+    display: block;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+  .dvm{
+    display: block;
+  }
+  .info{
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .leftSideWrapper, .rightSideWrapper{
+    scale: 0.8;
+  }
+  .leftSideWrapper{
+    transform: translateX(-10%);
+  }
+  .topTextWrapper{
+    margin-left: max(50px,5vw);
+  }
+  .info{
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .leftSideWrapper, .rightSideWrapper{
+    scale: unset;
+    margin-left: 1rem;
+  }
+  .heading{
+    font-size: 4rem;
+
+  }
+  .rotateText{
+    font-size: 1rem;
+    margin-top: 25px;
+  }
+  .leftBtn{
+    position: unset;
+    /* transform: translateY(10%); */
+  }
+  .carouselContainer{
+    position: unset;
+    flex-direction: column-reverse;
+  }
+  .leftBtn img{
+    transform: none;
+    margin-top: 1rem;
+  }
+  p{
+    font-size: 1.1rem;
+  }
+  .info{
+    padding-right: 0;
+  }
+}
