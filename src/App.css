@@ -54,6 +54,9 @@ body{
   font-family: upheaval;
   font-size: 7rem;
 }
+.mobilePageWrapper{
+  display: none;
+}
 .rotateText{
   transform: rotate(90deg);
   transform-origin: right bottom;
@@ -176,6 +179,7 @@ p{
   height: 300px;
 }
 .mobileDvmLogo{
+  display: none;
   left: 10px;
   position: absolute;
   bottom: 10px;
@@ -267,6 +271,9 @@ p{
   }
   .dvm{
     display: none;
+  }
+  .mobileDvmLogo{
+    display: block;
   }
   .info{
     padding-right: 0;
