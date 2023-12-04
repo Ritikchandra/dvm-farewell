@@ -3,9 +3,10 @@ import Logo from "../src/assets/dvmFarewellLogo.png"
 import Arrow from "../src/assets/leftArrow.png"
 import Sunpreet from "../src/assets/sunpreet.png"
 import Ritik from "../src/assets/ritik.jpg"
-import Sarthak from "../src/assets/sarthak.jpeg"
-import Devashish from "../src/assets/vi.jpeg"
-import Praneet from "../src/assets/praneet.jpeg"
+import Sarthak from "../src/assets/sarthak2.png"
+import Devashish from "../src/assets/devashish1.png"
+import Praneet from "../src/assets/praneet1.png"
+import Ansh from "../src/assets/ansh1.png"
 import React, {useState} from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectFlip, Pagination, Navigation } from 'swiper/modules';
@@ -18,6 +19,8 @@ function App() {
     { name: 'Sarthak ', team: 'Frontend', image: Sarthak },
     {name: "Praneet", team: "AppDev", image:Praneet},
     { name: 'Devashish', team: 'AppDev', image: Devashish },
+    { name: 'Ansh', team: 'Video', image: Ansh},
+
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
